@@ -30,6 +30,12 @@ public class Executer {
                 } else if (cliente.getIdade() < 18) {
                     cliente.verificarIdade();
                 }
+            } else if (cliente.escolha == 2) {
+                System.out.println("Encerrando Programa...");
+            } else if (cliente.escolha >= 3) {
+                System.out.println("Não é possível realizar essa ação");
+            } else if (cliente.escolha <= 0) {
+                System.out.println("Não é possível realizar essa ação");
             }
         }
     }
